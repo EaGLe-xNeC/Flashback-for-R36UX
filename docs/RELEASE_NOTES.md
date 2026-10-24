@@ -71,6 +71,9 @@ The following tests have been completed:
 - ZIP extraction was verified using SHA-256 comparison.
 - Executable permissions are stored in the ZIP.
 
+- Private ZIP package was extracted and launched successfully on the R36 Ultra X.
+- The ZIP installation passed initial video, audio, controller and FN-button tests.
+
 ## Known Limitations
 
 - The specific Voyage scaling branch has not been independently instrumented or verified.
