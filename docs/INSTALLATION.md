@@ -11,15 +11,40 @@
 
 Other firmware versions have not been verified.
 
-## Install
+## Installation from source
 
-1. Open the ROMs partition of your SD card.
-2. Locate the `ports` directory.
-3. Copy the contents of this project's `portmaster` directory into `ports`.
-4. The game launcher should be located at:
-   `ports/Flashback for R36UX.sh`
-5. The executable should be located at:
-   `ports/reminiscence/fb`
+The public GitHub repository is source-only and is not
+a ready-to-run installation package.
+
+1. Compile the ARM64 executable using `docs/BUILD.md`.
+2. Open the ROMs partition of the R36 Ultra X SD card.
+3. Locate the `ports` directory.
+4. Copy the launcher and configuration files from `portmaster`
+   into their corresponding locations under `ports`.
+5. Copy the compiled `rs` executable to
+   `ports/reminiscence/fb` and make it executable.
+6. Supply compatible ARM64 runtime libraries. The launcher
+   searches `ports/reminiscence/libs` for bundled libraries.
+7. Supply the original game assets as described below.
+
+Expected locations:
+
+- `ports/Flashback for R36UX.sh`
+- `ports/reminiscence/fb`
+- `ports/reminiscence/rs.cfg`
+- `ports/reminiscence/libs/libmodplug.so.1`
+
+Other shared library dependencies must also be available
+on the target system.
+
+## Installation from a complete release archive
+
+When an authorized public installer becomes available,
+extract its contents into the `ports` directory of the
+ROMs partition, preserving the directory structure.
+
+The installer does not contain commercial game assets.
+Do not overwrite existing save data unnecessarily.
 
 ## Game data
 

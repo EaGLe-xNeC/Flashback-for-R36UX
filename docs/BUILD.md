@@ -42,6 +42,24 @@ Run this command from the project root:
 The local ARM64 development headers and libraries must be
 prepared before running this command.
 
+## Reproducing the build environment
+
+The Docker command above was validated with a previously prepared
+local ARM64 dependency directory.
+
+It is not a fully self-contained build procedure. Before running
+it on another computer, prepare compatible ARM64 SDL2, libmodplug
+and zlib headers and libraries in:
+
+    ~/r36-flashback-build/include/
+    ~/r36-flashback-build/libs/
+
+These dependencies must match the target ARM64 Linux environment.
+They are not downloaded automatically by the build command.
+
+The exact preparation and provenance of the original local
+dependency bundle have not yet been fully documented.
+
 ## Output
 The compilation generates an ARM64 executable named rs.
 For PortMaster, it is installed as ports/reminiscence/fb.
