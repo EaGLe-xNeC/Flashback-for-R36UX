@@ -43,7 +43,7 @@ Other firmware versions may require additional setup.
 
 ## Installation
 
-The prebuilt ARM64 installer has been validated and is awaiting public release.
+The ARM64 installer is available in the [v1.0 GitHub Release](https://github.com/EaGLe-xNeC/Flashback-for-R36UX/releases/tag/v1.0).
 This repository provides the source code, PortMaster launcher
 and configuration files, but excludes the ARM64 executable,
 runtime libraries and commercial Flashback assets.
@@ -91,15 +91,15 @@ Flashback and its original game assets belong to their respective rights holders
 
 ## Status
 
-Version 1.0 — source release candidate.
+Version 1.0 — first public release.
 
-The final private ARM64 build has been tested on the
+The released ARM64 build has been tested on the
 R36 Ultra X running ArkOS4Clone with PortMaster.
 
 Fullscreen cinematics, subtitle overlays, music,
 Sega CD voices and FN-button support have been tested.
 
-The tested ARM64 installer is prepared for the v1.0 GitHub Release.
+The ARM64 installer is available for download from the v1.0 GitHub Release.
 Full regression testing of every cinematic is still pending.
 
 The specific Voyage scaling branch has not been
