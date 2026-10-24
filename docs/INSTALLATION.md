@@ -1,6 +1,6 @@
 # Flashback for R36UX — Installation Guide
 
-> **Important:** The public repository does not yet include the `fb` executable or `libmodplug.so.1`. The installation instructions below apply to a complete release package, which is not yet available.
+> **Important:** This source repository does not include the `fb` executable or `libmodplug.so.1`. The prepared v1.0 release ZIP contains `fb`, but requires a compatible ARM64 `libmodplug.so.1` installed on the device.
 
 ## Target device
 
@@ -32,14 +32,14 @@ Expected locations:
 - `ports/Flashback for R36UX.sh`
 - `ports/reminiscence/fb`
 - `ports/reminiscence/rs.cfg`
-- `ports/reminiscence/libs/libmodplug.so.1`
+- A compatible ARM64 `libmodplug.so.1` installed on the system (not included in the release ZIP)
 
 Other shared library dependencies must also be available
 on the target system.
 
 ## Installation from a complete release archive
 
-When an authorized public installer becomes available,
+Once the installer is published on GitHub Releases,
 extract its contents into the `ports` directory of the
 ROMs partition, preserving the directory structure.
 

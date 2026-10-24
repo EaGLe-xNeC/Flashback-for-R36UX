@@ -105,8 +105,9 @@ The source code and documentation are publicly available on GitHub.
 The final ARM64 installer has been validated privately
 on the R36 Ultra X but is not publicly distributed yet.
 
-Public binary distribution remains pending verification
-of bundled dependency provenance and licensing requirements.
+The release archive does not bundle libmodplug or commercial
+game assets. Publication remains subject to final licensing
+and attribution review.
 
 See docs/LICENSING.md for further details.
 

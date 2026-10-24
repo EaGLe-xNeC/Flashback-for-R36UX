@@ -43,7 +43,7 @@ Other firmware versions may require additional setup.
 
 ## Installation
 
-A public prebuilt installer is not yet available.
+The prebuilt ARM64 installer has been validated and is awaiting public release.
 This repository provides the source code, PortMaster launcher
 and configuration files, but excludes the ARM64 executable,
 runtime libraries and commercial Flashback assets.
@@ -99,7 +99,7 @@ R36 Ultra X running ArkOS4Clone with PortMaster.
 Fullscreen cinematics, subtitle overlays, music,
 Sega CD voices and FN-button support have been tested.
 
-A public binary installer has not yet been released.
+The tested ARM64 installer is prepared for the v1.0 GitHub Release.
 Full regression testing of every cinematic is still pending.
 
 The specific Voyage scaling branch has not been

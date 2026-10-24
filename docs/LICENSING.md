@@ -37,8 +37,8 @@ Original copyright notices are retained in the source files.
 The original libmodplug project is documented as public domain:
 https://github.com/Konstanty/libmodplug
 
-The exact provenance of the bundled ARM64 binary still
-requires verification before public binary distribution.
+The prepared v1.0 installer does not bundle libmodplug.
+It relies on a compatible ARM64 library provided by the system.
 
 Other third-party code retains its respective notices and licenses.
 
