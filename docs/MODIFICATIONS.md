@@ -60,3 +60,23 @@ Other devices and firmware have not been validated.
 
 Public redistribution is pending clarification of
 the upstream licensing terms and bundled binary dependencies.
+
+## PortMaster Launcher Review
+
+The PortMaster launcher was reviewed and tested on
+the R36 Ultra X running ArkOS4Clone.
+
+Validated behavior:
+- PortMaster control configuration is loaded.
+- Game files are loaded from the expected directory.
+- Game saves use a dedicated saves directory.
+- The FN button exits the game.
+- Control returns to EmulationStation after exit.
+
+Known limitation:
+- The launcher uses 'kill -9' with 'pidof gptokeyb'
+  during cleanup. This can terminate other gptokeyb
+  processes if they are running simultaneously.
+
+The existing cleanup method was retained for v1.0
+because it passed the tested configuration.
