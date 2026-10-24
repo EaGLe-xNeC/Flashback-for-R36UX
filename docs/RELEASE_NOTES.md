@@ -100,11 +100,15 @@ adaptation and is not an official Flashback release.
 
 ## Publication Status
 
-This is a private release candidate.
+The source code and documentation are publicly available on GitHub.
 
-Public distribution is pending clarification of
-the REminiscence 0.5.6 redistribution terms
-and bundled library licensing.
+The final ARM64 installer has been validated privately
+on the R36 Ultra X but is not publicly distributed yet.
+
+Public binary distribution remains pending verification
+of bundled dependency provenance and licensing requirements.
+
+See docs/LICENSING.md for further details.
 
 ## Final subtitle fix — v1.0
 

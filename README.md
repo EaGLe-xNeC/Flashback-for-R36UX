@@ -13,6 +13,7 @@ This adaptation targets the R36 Ultra X handheld with a 4.5-inch, 1024x768 displ
 ## Features
 
 - Fullscreen cinematic sequences optimized for the R36 Ultra X display.
+- Restored cinematic subtitles displayed in a fixed black overlay, without resizing the cinematic.
 - Improved scaling for special cinematics, including the Stone pickup animation.
 - Restored musical cues for item pickup sequences.
 - Sega CD voice support through the original VOICE.VCE file.
@@ -32,13 +33,22 @@ Commercial game assets are not included.
 
 ## Installation
 
-1. Copy the contents of the `portmaster` directory to your ROMs partition's `ports` directory.
-2. Place your legally obtained Flashback game data in `ports/reminiscence/gamedata`.
-3. Place compatible music modules in `ports/reminiscence/music`.
-4. Launch `Flashback for R36UX` from the Ports menu.
+A public prebuilt installer is not yet available.
+This repository provides the source code, PortMaster launcher
+and configuration files, but excludes the ARM64 executable,
+runtime libraries and commercial Flashback assets.
 
-See the installation guide for additional details.
+To prepare an installation from source:
 
+1. Build the ARM64 executable `rs` using `docs/BUILD.md`.
+2. Copy the PortMaster launcher and configuration files to your `ports` directory.
+3. Install the compiled executable as `ports/reminiscence/fb`.
+4. Supply compatible ARM64 runtime dependencies, including libmodplug.
+5. Place legally obtained Flashback game files in `ports/reminiscence/gamedata`.
+6. Place compatible music modules in `ports/reminiscence/music`.
+7. Launch `Flashback for R36UX` from the Ports menu.
+
+See `docs/INSTALLATION.md` for additional details.
 
 ## Screenshots
 
@@ -71,10 +81,28 @@ Flashback and its original game assets belong to their respective rights holders
 
 ## Status
 
-Version 1.0 — based on the tested R36 Ultra X v13 build.
+Version 1.0 — source release candidate.
 
-The special travel cinematic scaling change has not yet been validated in its specific scene.
+The final private ARM64 build has been tested on the
+R36 Ultra X running ArkOS4Clone with PortMaster.
+
+Fullscreen cinematics, subtitle overlays, music,
+Sega CD voices and FN-button support have been tested.
+
+A public binary installer has not yet been released.
+Full regression testing of every cinematic is still pending.
+
+The specific Voyage scaling branch has not been
+independently instrumented or verified.
 
 ## License
 
-License information and redistribution terms are being verified before public release.
+The modified REminiscence engine source is presented
+under GNU GPLv3.
+
+See `LICENSE` and `docs/LICENSING.md` for license details,
+attribution and the status of upstream licensing evidence.
+
+Original commercial Flashback game assets are not included.
+Third-party components retain their respective licenses.
+
