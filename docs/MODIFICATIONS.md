@@ -1,0 +1,62 @@
+# Flashback for R36UX — Modifications
+
+## Upstream
+
+Based on REminiscence 0.5.6 by Gregory Montoir.
+
+Original repository:
+https://github.com/cyxx/REminiscence
+
+Upstream reference:
+947a4dce261aacc4f6ec0c2c90cb9d7e37712c7b
+
+## Modified Source Files
+
+### cutscene.cpp
+
+- Improved fullscreen scaling for polygon-based cinematics.
+- Enlarged special cinematic animations.
+- Added scaling adjustments for the Stone pickup sequence.
+- Modified scaling of the special travel cinematic.
+
+Note: The travel cinematic modification still requires
+validation in its corresponding gameplay scene.
+
+### game.cpp
+
+- Restored a short musical cue for selected cutscenes.
+- Added a music-track mapping for original DOS track ID 0x15.
+
+### systemstub_sdl.cpp
+
+- Added handling for SDL_CONTROLLER_BUTTON_GUIDE.
+- Allows the FN button to exit the game on the tested
+  R36 Ultra X controller configuration.
+
+### rs.cfg
+
+- Configured cinematic behavior for the R36 Ultra X.
+- Enabled special Stone and Metro cutscene options.
+- Disabled SEQ cutscenes.
+
+## Additional Project Files
+
+- PortMaster launcher for the R36 Ultra X.
+- Installation documentation.
+- Licensing and attribution documentation.
+- ARM64 private test build.
+
+## Compatibility
+
+Target hardware:
+R36 Ultra X, 1024x768, 4:3.
+
+Tested firmware:
+ArkOS4Clone.
+
+Other devices and firmware have not been validated.
+
+## Redistribution
+
+Public redistribution is pending clarification of
+the upstream licensing terms and bundled binary dependencies.

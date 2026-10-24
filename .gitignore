@@ -28,3 +28,7 @@ Thumbs.db
 # Prebuilt binaries awaiting redistribution review
 /portmaster/reminiscence/fb
 /portmaster/reminiscence/libs/
+
+# Private testing
+/Flashback-for-R36UX-*-PRIVATE-TEST.zip
+/testing/
