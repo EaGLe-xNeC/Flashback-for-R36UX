@@ -32,3 +32,8 @@ Thumbs.db
 # Private testing
 /Flashback-for-R36UX-*-PRIVATE-TEST.zip
 /testing/
+
+# Temporary screenshots
+/screenshots/captura-teste.png
+/screenshots/cinematics-test/
+/screenshots/special-test/

@@ -39,6 +39,19 @@ Commercial game assets are not included.
 
 See the installation guide for additional details.
 
+
+## Screenshots
+
+### Gameplay
+![Gameplay](screenshots/gameplay.png)
+
+### Cinematics
+![Cinematics](screenshots/cinematics.png)
+
+### Special Animations
+![Special Animations](screenshots/special-animations.png)
+
+
 ## Build
 
 The included source was cross-compiled for Linux ARM64 using Docker and the dockcross Linux ARM64 toolchain.
