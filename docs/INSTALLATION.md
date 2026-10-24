@@ -46,6 +46,21 @@ ROMs partition, preserving the directory structure.
 The installer does not contain commercial game assets.
 Do not overwrite existing save data unnecessarily.
 
+## Required system library
+
+The release archive does not bundle `libmodplug.so.1`.
+
+On the tested ArkOS4Clone installation, the ARM64
+library is available at:
+
+    /lib/aarch64-linux-gnu/libmodplug.so.1
+
+Before installation, verify that a compatible ARM64
+version is present on your device.
+
+The release package has been tested on the R36 Ultra X.
+Other firmware versions have not been validated.
+
 ## Game data
 
 Create the following directories if needed:

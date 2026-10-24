@@ -31,6 +31,16 @@ This adaptation targets the R36 Ultra X handheld with a 4.5-inch, 1024x768 displ
 
 Commercial game assets are not included.
 
+## Runtime Dependency
+
+The binary release requires a compatible ARM64
+`libmodplug.so.1` already installed on the device.
+
+Tested on R36 Ultra X with ArkOS4Clone, using the
+system-provided libmodplug package.
+
+Other firmware versions may require additional setup.
+
 ## Installation
 
 A public prebuilt installer is not yet available.
