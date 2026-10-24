@@ -31,9 +31,9 @@ remain unchanged.
 Improved scaling for special sequences, including
 the Stone pickup animation.
 
-The special travel cinematic has also received a
-scaling modification, but its specific scene
-still requires validation.
+The special travel cinematic also received a scaling
+modification. The sequence was reproduced successfully
+in fullscreen on the R36 Ultra X.
 
 ### Restored Audio Cues
 
@@ -73,8 +73,7 @@ The following tests have been completed:
 
 ## Known Limitations
 
-- Special travel cinematic scaling has not yet been
-  verified in the corresponding scene.
+- The specific Voyage scaling branch has not been independently instrumented or verified.
 - Compatibility with other handhelds has not been tested.
 - Compatibility with firmware other than ArkOS4Clone
   has not been verified.
