@@ -1,5 +1,7 @@
 # Flashback for R36UX
 
+> **Pre-release:** This repository currently contains source code and PortMaster configuration, but no prebuilt executable or runtime libraries. Licensing review and release packaging are still in progress.
+
 An enhanced adaptation of the REminiscence engine for the R36 Ultra X handheld.
 
 ## About

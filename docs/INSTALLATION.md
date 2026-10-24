@@ -1,5 +1,7 @@
 # Flashback for R36UX — Installation Guide
 
+> **Important:** The public repository does not yet include the `fb` executable or `libmodplug.so.1`. The installation instructions below apply to a complete release package, which is not yet available.
+
 ## Target device
 
 - R36 Ultra X handheld
