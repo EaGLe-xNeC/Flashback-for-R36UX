@@ -1,0 +1,30 @@
+# Compilation
+*.o
+*.d
+rs
+
+# Commercial Flashback data
+**/gamedata/
+**/music/
+**/VOICE.VCE
+**/voice.vce
+
+# Game saves and logs
+**/saves/
+**/saves-test/
+*.sav
+log.txt
+
+# Development backups
+*backup*
+*.bak
+fb-test-*
+rs-v*-test
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Prebuilt binaries awaiting redistribution review
+/portmaster/reminiscence/fb
+/portmaster/reminiscence/libs/
