@@ -60,6 +60,25 @@ They are not downloaded automatically by the build command.
 The exact preparation and provenance of the original local
 dependency bundle have not yet been fully documented.
 
+## Recorded ARM64 build dependencies
+
+The tested binary was compiled using the following ARM64
+development libraries:
+
+| Library | Identified version | SHA-256 |
+| --- | --- | --- |
+| SDL2 | 2.32.10 | `4fd539cd0e2b2dc883beb8dedffa1f85212276b34e51b2a8bf98b4f8fd4f5cb4` |
+| libmodplug | Version not confirmed | `54e494273f144cdb549684b13d56829d2717c151ec452c16bfdc08b87e91957e` |
+| zlib | 1.2.11 (library filename) | `981be324472bdf3519ca5b9275413d0a3924b182d27f12605b35da499a0f0b52` |
+
+All three files were identified as AArch64 ELF shared libraries.
+These hashes document the original local build inputs;
+they are not download links or requirements for an identical
+binary hash.
+
+The release ZIP does not distribute these libraries.
+Their exact original download sources have not been recorded.
+
 ## Output
 The compilation generates an ARM64 executable named rs.
 For PortMaster, it is installed as ports/reminiscence/fb.

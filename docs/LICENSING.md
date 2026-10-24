@@ -51,7 +51,11 @@ Users must provide their own legally obtained game files.
 
 ## Binary distribution
 
-Public release of the installer is conditional on verifying
-the provenance and redistribution requirements of bundled binaries.
-Corresponding source code and applicable license notices must
-be made available with GPL-covered binaries.
+The prepared release archive contains the project's ARM64
+engine executable, launcher, configuration and GPLv3 license text.
+It does not bundle third-party shared libraries or commercial
+game assets.
+
+Public binary distribution requires the corresponding engine
+source code, applicable notices and compliance with the relevant
+copyright and license terms.
