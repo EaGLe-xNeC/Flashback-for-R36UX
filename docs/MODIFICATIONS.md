@@ -80,3 +80,16 @@ Known limitation:
 
 The existing cleanup method was retained for v1.0
 because it passed the tested configuration.
+
+## Fullscreen cinematic subtitles
+
+The original fullscreen modification enlarged the cinematic image but cropped
+captions rendered beneath it.
+
+The final implementation preserves the original fullscreen image and copies
+the caption strip into a bottom overlay when caption pixels are present.
+
+This avoids the abrupt changes in framing caused by the earlier experimental
+adaptive-zoom implementation.
+
+The modification is implemented in Cutscene::updateScreen() in cutscene.cpp.

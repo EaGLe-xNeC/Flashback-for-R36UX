@@ -85,14 +85,65 @@ void Cutscene::updateScreen() {
     sync(_frameDelay - 1);
     updatePalette();
     SWAP(_frontPage, _backPage);
-    _stub->copyRect(0, 0, _vid->_w, _vid->_h, _frontPage, _vid->_w);
-    // Exclude the credits, which use a different layout.
+
+    // Copiar o quadro original.
+    _stub->copyRect(0, 0, _vid->_w, _vid->_h,
+                    _frontPage, _vid->_w);
+
     if (!_creditsSequence) {
         const int scale = _vid->_layerScale;
         const int x = ((Video::GAMESCREEN_W - 240) / 2) * scale;
         const int y = 50 * scale;
-        _stub->zoomRect(x, y, 240 * scale, 128 * scale);
+        const int w = 240 * scale;
+        const int imageH = 128 * scale;
+
+        // Legendas originais: faixa inferior do quadro.
+        const int captionStart = (Video::GAMESCREEN_H - 45) * scale;
+        const int captionH = 45 * scale;
+
+        int lastTextRow = -1;
+
+        // Encontrar a ultima linha visivel da legenda.
+        for (int cy = captionStart;
+             cy < captionStart + captionH && cy < _vid->_h;
+             ++cy) {
+
+            const uint8_t *row =
+                _frontPage + cy * _vid->_w + x;
+
+            for (int cx = 0; cx < w; ++cx) {
+                if (row[cx] != 0xC0) {
+                    lastTextRow = cy;
+                    break;
+                }
+            }
+        }
+
+        if (lastTextRow >= captionStart) {
+            // Incluir uma pequena margem inferior.
+            int overlayH = lastTextRow - captionStart
+                           + 1 + 3 * scale;
+
+            if (overlayH > captionH) {
+                overlayH = captionH;
+            }
+
+            // Sobrepor a faixa original de legenda ao rodape
+            // da imagem, sem alterar o enquadramento.
+            const int dstY = y + imageH - overlayH;
+
+            const uint8_t *shiftedSource =
+                _frontPage +
+                (captionStart - dstY) * _vid->_w;
+
+            _stub->copyRect(x, dstY, w, overlayH,
+                            shiftedSource, _vid->_w);
+        }
+
+        // Sempre manter a imagem em fullscreen.
+        _stub->zoomRect(x, y, w, imageH);
     }
+
     _stub->updateScreen(0);
 }
 

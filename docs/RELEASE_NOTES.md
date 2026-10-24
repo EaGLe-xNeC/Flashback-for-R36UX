@@ -105,3 +105,12 @@ This is a private release candidate.
 Public distribution is pending clarification of
 the REminiscence 0.5.6 redistribution terms
 and bundled library licensing.
+
+## Final subtitle fix — v1.0
+
+- Restored captions that were previously cropped by fullscreen cinematic scaling.
+- Cinematics remain fullscreen at 1024x768 when captions appear.
+- Captions are displayed in an opaque black overlay at the bottom of the screen.
+- No abrupt cinematic resizing when captions appear or disappear.
+- Gameplay, music, Sega CD voices and controller behavior remain unchanged.
+- Verified on the R36 Ultra X running ArkOS4Clone.
