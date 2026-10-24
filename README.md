@@ -105,4 +105,3 @@ attribution and the status of upstream licensing evidence.
 
 Original commercial Flashback game assets are not included.
 Third-party components retain their respective licenses.
-
